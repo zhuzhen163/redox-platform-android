@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.redoxyt.platform">
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" /> <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> <!-- 添加必要的权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:name=".FactoryApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:resizeableActivity="false"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".activity.OrderPlanWarnActivity"></activity>
+        <activity android:name=".activity.PlatformListActivity" />
+        <activity android:name=".activity.MoreWareHouseOrderActivity" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" /> <!-- 小米手机开启刘海适配 -->
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" /> <!-- 华为手机开启刘海适配 -->
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainDriverActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.MainFleetActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.MainStorekeeperActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.MainGuardActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".activity.MainUrgentActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".qr.CaptureActivity" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.MyBillActivity" />
+        <activity android:name=".activity.BuildReservationActivity" />
+        <activity android:name=".activity.FleetRegisterActivity" />
+        <activity android:name=".activity.InfoAuthActivity" />
+        <activity
+            android:name=".activity.PayOrderActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.CarListActivity" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.QuestionnaireActivity" />
+        <activity android:name=".activity.PayLoadingActivity" />
+        <activity android:name=".activity.InspectionRecordActivity" />
+        <activity android:name=".activity.UserWarehouseActivity" />
+        <activity android:name=".activity.ReservationRecordActivity" />
+        <activity android:name=".activity.ComplaintActivity" />
+        <activity android:name=".activity.HistoryFindActivity" />
+        <activity android:name=".activity.TodayFindActivity" />
+        <activity android:name=".activity.AdminQueryPaymentActivity" />
+        <activity android:name=".activity.AdminReservationListActivity" />
+        <activity android:name=".activity.CurrencySearchActivity" />
+        <activity android:name=".activity.FleetHistoryFindActivity" />
+        <activity android:name=".activity.ParkingPaySuccessActivity" />
+        <activity android:name=".activity.ParkingPayOrderActivity" />
+        <activity android:name=".activity.ParkingPayLoadingActivity" />
+        <activity android:name=".activity.WarehouseCarStateActivity" />
+        <activity android:name=".activity.WarehouseQrActivity" />
+        <activity android:name=".activity.ManagerWarehouseActivity" />
+        <activity android:name=".activity.DriverWorkActivity" />
+        <activity android:name=".activity.AIBuildReservationActivity" />
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:taskAffinity="com.redoxyt.platform" />
+        <activity android:name=".activity.WebViewActivity" />
+        <activity android:name=".activity.WebViewPDFActivity" />
+        <activity android:name=".widget.camerautil.camera.CameraActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.redoxyt.platform.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider> <!-- 广播(版本更新) -->
+        <receiver android:name=".service.DownloadCompleteReceiver">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+        </receiver>
+        <!--
+<meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="G6F9MXE6BzilkiZAUTuhYWNkBL1Ltijz" />
+        -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="dptbTl7Lu1nT0CbLkFKQlc1H4A7Sl0VA" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!--
+<meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="83e9461a429755e54fd88547fc7bd1ad" />
+        -->
+        <service android:name=".service.LocationService" />
+        <service android:name=".service.LocationServiceNew" />
+
+        <activity
+            android:name="com.chuanglan.shanyan_sdk.view.CmccLoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/dialogStyle" />
+        <activity-alias
+            android:name="com.cmic.gen.sdk.view.GenLoginAuthActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:targetActivity="com.chuanglan.shanyan_sdk.view.CmccLoginActivity"
+            android:theme="@style/dialogStyle" />
+        <activity
+            android:name="com.chuanglan.shanyan_sdk.view.ShanYanOneKeyActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/dialogStyle" />
+        <!-- ***********协议页activity************ -->
+        <activity
+            android:name="com.chuanglan.shanyan_sdk.view.CTCCPrivacyProtocolActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="standard"
+            android:screenOrientation="behind" />
+    </application>
+
+</manifest>

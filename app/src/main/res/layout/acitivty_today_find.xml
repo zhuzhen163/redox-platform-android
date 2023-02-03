@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <widget.CommonToolbar
+        android:id="@+id/ctl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="当天预约查询" />
+
+    <View style="@style/Base_line_Horizontal" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:background="@color/color_theme"
+            android:layout_width="@dimen/dimen3dp"
+            android:layout_height="@dimen/dimen16dp"/>
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_marginLeft="@dimen/dimen5dp"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/dimen14dp"
+            android:text="今日预约总数"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:layout_weight="1"
+        android:id="@+id/lv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginBottom="@dimen/dp_5"
+        />
+
+</LinearLayout>

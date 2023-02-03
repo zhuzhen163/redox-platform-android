@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6"
+    android:orientation="vertical"
+    >
+
+    <widget.CommonToolbar
+        android:id="@+id/ctb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="订单支付" />
+
+    <View style="@style/Base_line_Horizontal_10"/>
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_loading"
+        android:layout_marginTop="@dimen/dimen70dp"
+        android:layout_width="@dimen/dimen200dp"
+        android:layout_height="@dimen/dimen160dp"
+        />
+    <TextView
+        android:textSize="@dimen/dimen14dp"
+        android:textColor="@color/color_theme"
+        android:layout_marginTop="@dimen/dimen30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="支付处理中,请耐心等待..."/>
+
+</LinearLayout>

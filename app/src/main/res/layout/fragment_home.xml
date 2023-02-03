@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/TextGrayF5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <widget.CommonToolbar
+        android:id="@+id/ctl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_visibility="true"
+        android:paddingTop="@dimen/dimen25dp"
+        app:title_name="首页" />
+
+    <com.redoxyt.platform.widget.ImageCycleView
+        android:id="@+id/icv_topView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen160dp"/>
+    
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen5dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen80dp">
+        <TextView
+            android:id="@+id/tv_buildReservation"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/yt_build_yuyue"
+            android:drawablePadding="@dimen/dimen10dp"
+            android:text="新建预约"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/dimen13dp"/>
+        <View
+            android:layout_width="@dimen/dimen1dp"
+            android:layout_height="match_parent"
+            android:background="@color/TextGrayF5"/>
+        <TextView
+            android:id="@+id/tv_reservationQuery"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/yt_yycx"
+            android:drawablePadding="@dimen/dimen10dp"
+            android:text="预约查询"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/dimen13dp"/>
+        <View
+            android:layout_width="@dimen/dimen1dp"
+            android:layout_height="match_parent"
+            android:background="@color/TextGrayF5"/>
+        <TextView
+            android:id="@+id/tv_reservationPay"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/yt_yyfk"
+            android:drawablePadding="@dimen/dimen10dp"
+            android:text="预约付款"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/dimen13dp"/>
+    </LinearLayout>
+</LinearLayout>

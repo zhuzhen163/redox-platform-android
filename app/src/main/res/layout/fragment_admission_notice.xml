@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <widget.CommonToolbar
+        android:paddingTop="@dimen/dimen25dp"
+        app:left_visibility="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="入场须知" />
+
+    <View style="@style/Base_line_Horizontal_10"/>
+
+    <LinearLayout
+        android:id="@+id/ll_questionnaire"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen15dp"
+        android:layout_marginRight="@dimen/dimen15dp"
+        android:background="@drawable/yt_xzdc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen50dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dimen12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="入场须知调查表"
+            android:textSize="@dimen/dimen15dp"/>
+        <ImageView
+            android:layout_marginRight="@dimen/dimen12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yt_icon_dcb"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:id="@+id/ll_text"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen15dp"
+        android:layout_marginRight="@dimen/dimen15dp"
+        android:background="@drawable/yt_xztw"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen50dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dimen12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="入场须知图文"
+            android:textSize="@dimen/dimen15dp"/>
+        <ImageView
+            android:layout_marginRight="@dimen/dimen12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yt_icon_tw"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_video"
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dimen15dp"
+        android:layout_marginRight="@dimen/dimen15dp"
+        android:background="@drawable/yt_xzsp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen50dp">
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dimen12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="入场须知视频"
+            android:textSize="@dimen/dimen15dp"/>
+        <ImageView
+            android:layout_marginRight="@dimen/dimen12dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yt_icon_sp"/>
+    </LinearLayout>
+
+</LinearLayout>

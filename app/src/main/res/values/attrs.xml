@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="waybill_title">
+        <item>运输中</item>
+        <item>已签收</item>
+        <item>待核销</item>
+    </string-array>
+    <string-array name="waybill_title_driver">
+        <item>运输中</item>
+        <item>已签收</item>
+    </string-array>
+    <string-array name="main_title">
+        <item>接单</item>
+        <item>我的</item>
+    </string-array>
+    <string-array name="cus_title">
+        <item>已接单</item>
+        <item>未接单</item>
+    </string-array>
+</resources>

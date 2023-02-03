@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginBottom="@dimen/dimen10dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_flag1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/cangkubianma"
+            android:textColor="@color/colorBlack_B3B3B3"
+            android:textSize="@dimen/sp_12"></TextView>
+
+        <TextView
+            android:id="@+id/tv_warehouse_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen25dp"
+            android:layout_toRightOf="@+id/tv_flag1"
+            android:textColor="@color/color_black_222222"
+            android:textSize="12sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_app_yt_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/app_yt_close">
+
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="@dimen/dimen5dp">
+
+        <TextView
+            android:id="@+id/tv_flag2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/cangkumingcheng"
+            android:textColor="@color/colorBlack_B3B3B3"
+            android:textSize="@dimen/sp_12"></TextView>
+
+        <TextView
+            android:id="@+id/tv_warehouse_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen25dp"
+            android:layout_toRightOf="@+id/tv_flag2"
+            android:textColor="@color/color_black_222222"
+            android:textSize="12sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_yt_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:padding="@dimen/dimen5dp">
+
+        <TextView
+            android:id="@+id/tv_flag3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/yuetaiquanmingcheng"
+            android:textColor="@color/colorBlack_B3B3B3"
+            android:textSize="@dimen/sp_12"></TextView>
+
+        <TextView
+            android:id="@+id/tv_yt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen25dp"
+            android:layout_toRightOf="@+id/tv_flag3"
+            android:textColor="@color/color_black_222222"
+            android:textSize="12sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+</LinearLayout>

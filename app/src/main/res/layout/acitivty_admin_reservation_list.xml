@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    >
+
+    <widget.CommonToolbar
+        android:id="@+id/ctl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="预约查询" />
+
+    <View style="@style/Base_line_Horizontal" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:layout_marginRight="@dimen/dimen20dp"
+        android:layout_marginLeft="@dimen/dimen20dp"
+        android:background="@drawable/corner_yt_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen30dp">
+        <EditText
+            android:imeOptions="actionSearch"
+            android:id="@+id/et_search"
+            android:singleLine="true"
+            android:paddingLeft="@dimen/dimen10dp"
+            android:textSize="@dimen/dimen14dp"
+            android:textColor="@color/black_333"
+            android:layout_weight="1"
+            android:hint="预约号 运单号 车号 司机姓名 日期"
+            android:textColorHint="@color/bg"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_marginLeft="@dimen/dimen10dp"
+            android:textColor="@color/black_333"
+            android:textSize="@dimen/dimen14dp"
+            android:gravity="center"
+            android:text="搜索"
+            android:layout_marginRight="@dimen/dimen10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:layout_weight="1"
+        android:id="@+id/lv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginBottom="@dimen/dp_5"
+        />
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f6"
+    android:layout_height="match_parent">
+
+    <widget.CommonToolbar
+        android:id="@+id/ctb_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="预约详情" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_carry"
+        android:layout_margin="@dimen/dimen15dp"
+        app:cardCornerRadius="@dimen/dimen2dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:background="@drawable/corner_yt_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:background="@drawable/yt_right_bg"
+                android:layout_width="@dimen/dimen100dp"
+                android:layout_height="@dimen/dimen100dp" />
+            <TextView
+                android:id="@+id/tv_carCode"
+                android:layout_marginTop="@dimen/dimen25dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="45"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen13dp"
+                android:text=""/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginRight="@dimen/dimen15dp"
+                    android:layout_marginLeft="@dimen/dimen15dp"
+                    android:gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen30dp">
+                    <View
+                        android:layout_width="@dimen/dimen3dp"
+                        android:layout_height="@dimen/dimen15dp"
+                        android:background="@color/color_theme"/>
+                    <TextView
+                        android:id="@+id/tv_reserveCode"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/dimen10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="预约码："
+                        android:textSize="@dimen/dimen15dp"
+                        android:textColor="@color/black_333"/>
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_transportCode"
+                    android:textColor="@color/color_65"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginLeft="@dimen/dimen15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="运单号： "
+                    android:textSize="@dimen/dimen13dp"/>
+                <TextView
+                    android:id="@+id/tv_warehouseName"
+                    android:textColor="@color/color_65"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginLeft="@dimen/dimen15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="货主： "
+                    android:textSize="@dimen/dimen13dp"/>
+                <TextView
+                    android:id="@+id/tv_platformId"
+                    android:textColor="@color/color_65"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginLeft="@dimen/dimen15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月台号："
+                    android:textSize="@dimen/dimen13dp"/>
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_startTime"
+                    android:singleLine="true"
+                    android:textColor="@color/color_65"
+                    android:layout_marginTop="@dimen/dimen10dp"
+                    android:layout_marginLeft="@dimen/dimen15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始时间："
+                    android:textSize="@dimen/dimen13dp"/>
+
+
+                <TextView
+                    android:id="@+id/tv_start_complete"
+                    android:layout_marginTop="@dimen/dimen20dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/dimen20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/yt_button"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen14dp"
+                    android:text="开始作业"
+                    android:layout_width="@dimen/dimen140dp"
+                    android:layout_height="@dimen/dimen40dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

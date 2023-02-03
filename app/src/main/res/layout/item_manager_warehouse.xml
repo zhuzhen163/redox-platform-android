@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen75dp">
+        <ImageView
+            android:layout_marginLeft="@dimen/dimen10dp"
+            android:layout_width="@dimen/dimen28dp"
+            android:layout_height="@dimen/dimen28dp"
+            android:src="@drawable/yt_cang"/>
+
+        <View
+            android:layout_marginRight="@dimen/dimen5dp"
+            android:layout_marginLeft="@dimen/dimen5dp"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/dimen50dp"
+            android:background="#CCCCCC"/>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_warehouseCode"
+                android:textSize="@dimen/dimen13dp"
+                android:textColor="@color/black_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仓 库 码："/>
+            <TextView
+                android:id="@+id/tv_warehouseName"
+                android:layout_marginTop="@dimen/dimen5dp"
+                android:textSize="@dimen/dimen12dp"
+                android:textColor="@color/black_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仓库名称："/>
+            <TextView
+                android:id="@+id/tv_warehouseAddress"
+                android:layout_marginTop="@dimen/dimen5dp"
+                android:textSize="@dimen/dimen12dp"
+                android:textColor="@color/black_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仓库地址："/>
+        </LinearLayout>
+        <ImageView
+            android:layout_marginLeft="@dimen/dimen5dp"
+            android:layout_marginRight="@dimen/dimen10dp"
+            android:src="@drawable/yt_icon_qr_warehouse"
+            android:layout_width="@dimen/dimen18dp"
+            android:layout_height="@dimen/dimen18dp"
+            />
+        <ImageView
+            android:layout_marginRight="@dimen/dimen15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yt_join"/>
+    </LinearLayout>
+
+    <View style="@style/Base_line_Horizontal"/>
+
+</LinearLayout>

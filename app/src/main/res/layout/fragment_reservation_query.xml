@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f6"
+    android:layout_height="match_parent">
+
+    <widget.CommonToolbar
+        android:id="@+id/ctb_title"
+        android:paddingTop="@dimen/dimen25dp"
+        app:left_visibility="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="预约查询" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:layout_marginRight="@dimen/dimen20dp"
+        android:layout_marginLeft="@dimen/dimen20dp"
+        android:background="@drawable/corner_yt_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yt_search_1"/>
+        <TextView
+            android:layout_marginLeft="@dimen/dimen10dp"
+            android:textColor="@color/color_cbcbcb"
+            android:textSize="@dimen/dimen14dp"
+            android:gravity="center"
+            android:text="搜索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:layout_weight="1"
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        />
+</LinearLayout>

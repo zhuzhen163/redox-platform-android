@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Toolbar-->
+    <declare-styleable name="CommonToolbar">
+        <attr name="background_color" format="color"></attr>
+        <attr name="title_name" format="string"></attr>
+        <attr name="title_color" format="color"></attr>
+        <attr name="left_visibility" format="boolean"></attr>
+        <attr name="edit_visibility" format="boolean"></attr>
+        <attr name="left_img" format="reference"></attr>
+        <attr name="right_name" format="string"></attr>
+        <attr name="right_img_one" format="reference"></attr>
+        <attr name="right_img_two" format="reference"></attr>
+        <attr name="right_img_three" format="reference"></attr>
+        <attr name="bg_color" format="reference"></attr>
+    </declare-styleable>
+
+    <!--SettingLayout-->
+
+    <declare-styleable name="TLayout">
+        <attr name="radius" format="dimension" />
+        <attr name="location" format="integer" />
+    </declare-styleable>
+    <!--消息发送-->
+    <declare-styleable name="ImSentVoice">
+        <attr name="voice_anim" format="reference"></attr>
+        <attr name="voice_bg" format="reference"></attr>
+
+    </declare-styleable>
+
+    <declare-styleable name="NiceImageView">
+        <attr name="is_circle" format="boolean" />
+        <attr name="is_cover_src" format="boolean" />
+        <attr name="corner_radius" format="dimension" />
+        <attr name="corner_top_left_radius" format="dimension" />
+        <attr name="corner_top_right_radius" format="dimension" />
+        <attr name="corner_bottom_left_radius" format="dimension" />
+        <attr name="corner_bottom_right_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="inner_border_width" format="dimension" />
+        <attr name="inner_border_color" format="color" />
+        <attr name="mask_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <!--密码个数-->
+        <attr name="passwordNumber" format="integer"/>
+        <!--密码原点的半径-->
+        <attr name="passwordRadius" format="dimension"/>
+        <!--密码原点的颜色-->
+        <attr name="passwordColor" format="color"/>
+        <!--分割线的颜色-->
+        <attr name="divisionLineColor" format="color"/>
+        <!--分割线的大小  指宽度-->
+        <attr name="divisionLineSize" format="dimension"/>
+        <!--背景边框的颜色-->
+        <attr name="bgColor" format="color"/>
+        <!--背景边框的大小-->
+        <attr name="bgSize" format="dimension"/>
+        <!--背景边框的圆角大小-->
+        <attr name="bgCorner" format="dimension"/>
+
+    </declare-styleable>
+</resources>

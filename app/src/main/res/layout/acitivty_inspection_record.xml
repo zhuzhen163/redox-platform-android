@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_f6"
+    android:orientation="vertical"
+    >
+
+    <widget.CommonToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="入场检查记录" />
+
+    <View style="@style/Base_line_Horizontal"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:layout_marginTop="@dimen/dimen10dp"
+        android:layout_marginRight="@dimen/dimen15dp"
+        android:layout_marginLeft="@dimen/dimen15dp"
+        android:background="@drawable/corner_yt_home"
+        android:layout_gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen30dp">
+        <ImageView
+            android:layout_marginLeft="@dimen/dimen10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/yt_search_1"/>
+        <EditText
+            android:id="@+id/et_search"
+            android:singleLine="true"
+            android:textSize="@dimen/dimen13dp"
+            android:textColorHint="@color/color_cbcbcb"
+            android:hint="更多请输入信息进行查询（车牌号，司机姓名）"
+            android:layout_marginLeft="@dimen/dimen10dp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLength="30"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:padding="@dimen/dimen6dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="@dimen/dimen30dp"
+            android:layout_height="@dimen/dimen30dp"
+            android:src="@drawable/yt_quxiao"/>
+    </LinearLayout>
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:layout_weight="1"
+        android:id="@+id/lv_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:layout_marginBottom="@dimen/dp_5"
+        />
+</LinearLayout>

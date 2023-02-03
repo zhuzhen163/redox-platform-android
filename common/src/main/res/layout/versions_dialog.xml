@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_kuang_white"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--版本升级的弹框-->
+    <ImageView
+        android:id="@+id/img_backtop_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/pf_updataapp_background" />
+
+    <TextView
+        android:id="@+id/tv_version_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="1.0.0"
+        android:textColor="@color/color_gray_909090"
+        android:textSize="@dimen/sp_14" />
+    <!--升级详情-->
+    <TextView
+        android:id="@+id/tv_version_message"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/color_gray_909090"
+        android:textSize="@dimen/sp_14" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp">
+        <!--暂不更新-->
+        <Button
+            android:id="@+id/but_bugengxin_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_line2"
+            android:background="@null"
+            android:text="暂不更新"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_line2"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/setting_line_dcdcdc"
+            android:visibility="gone" />
+        <!--立即升级-->
+        <Button
+            android:id="@+id/but_shengji_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_line2"
+            android:background="@null"
+            android:text="立即升级"
+            android:textColor="@color/color_blue_0C85EE" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/setting_line_dcdcdc" />
+    </RelativeLayout>
+</LinearLayout>

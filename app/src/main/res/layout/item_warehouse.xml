@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen60dp">
+        <ImageView
+            android:layout_marginLeft="@dimen/dimen10dp"
+            android:layout_width="@dimen/dimen28dp"
+            android:layout_height="@dimen/dimen28dp"
+            android:src="@drawable/yt_cang"/>
+
+        <View
+            android:layout_marginRight="@dimen/dimen5dp"
+            android:layout_marginLeft="@dimen/dimen5dp"
+            android:layout_width="0.5dp"
+            android:layout_height="@dimen/dimen30dp"
+            android:background="#CCCCCC"/>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_warehouseCode"
+                android:textSize="@dimen/dimen13dp"
+                android:textColor="@color/black_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仓 库 码："/>
+            <TextView
+                android:id="@+id/tv_warehouseName"
+                android:layout_marginTop="@dimen/dimen10dp"
+                android:textSize="@dimen/dimen12dp"
+                android:textColor="@color/black_333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="仓库名称："/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/Base_line_Horizontal"/>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen15dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/yonghuma"
+                android:layout_weight="1.5"
+                android:textColor="@color/color_black_333333"
+                android:textSize="@dimen/sp_13"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/et_qiyema"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="end"
+                android:hint="@string/qingshuruyonghuma"
+                android:maxLength="6"
+                android:maxLines="1"
+                android:textColor="@color/black_666"
+                android:textSize="@dimen/sp_13"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <View style="@style/Base_line_Horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/yonghumingcheng"
+                android:textColor="@color/color_black_333333"
+                android:textSize="@dimen/sp_13"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_yonghuming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black_666"
+                android:textSize="@dimen/sp_13"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <View style="@style/Base_line_Horizontal" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_qiyema_chaxun"
+        android:layout_width="@dimen/dimen100dp"
+        android:layout_height="@dimen/dimen35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen25dp"
+        android:background="@drawable/yt_button"
+        android:text="@string/chaxun"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_13" />
+
+</RelativeLayout>

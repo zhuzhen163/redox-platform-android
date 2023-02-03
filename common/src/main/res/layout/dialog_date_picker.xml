@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/frame_string_picker"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/cancel"
+            android:textColor="#3F89FD"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="请选择时间"
+            android:textColor="#3F89FD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/frame_string_picker_bg"
+            android:gravity="center"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="确认"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/vs_line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp"
+        android:paddingTop="15dp">
+
+        <view.PickerView
+            android:id="@+id/dpv_year"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="3" />
+
+        <TextView
+            android:id="@+id/tv_year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/year"
+            android:textColor="@color/color_black_333333"
+            android:textSize="13sp" />
+
+        <view.PickerView
+            android:id="@+id/dpv_month"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/month"
+            android:textColor="@color/color_black_333333"
+            android:textSize="13sp" />
+
+        <view.PickerView
+            android:id="@+id/dpv_day"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/day"
+            android:textColor="@color/color_black_333333"
+            android:textSize="13sp" />
+
+        <view.PickerView
+            android:id="@+id/dpv_hour"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_hour_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/hour"
+            android:textColor="@color/color_black_333333"
+            android:textSize="13sp" />
+
+        <view.PickerView
+            android:id="@+id/dpv_minute"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="2" />
+
+        <TextView
+            android:id="@+id/tv_minute_unit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/minute"
+            android:textColor="@color/color_black_333333"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

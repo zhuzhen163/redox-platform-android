@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen245dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/dialog_corner_yt"
+        android:gravity="center"
+        android:text="通知"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:background="@drawable/dialog_corner_b"
+        android:paddingTop="@dimen/dimen10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="@color/black_333"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请在指定时间内及时开始进行作业："/>
+        <TextView
+            android:id="@+id/tv_count_down"
+            android:layout_marginTop="@dimen/dimen5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_theme"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/dimen15dp"
+            android:text=""/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen5dp"
+            android:layout_marginRight="@dimen/dimen20dp"
+            android:layout_marginLeft="@dimen/dimen20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（若您选择无法按时入场，仅会让您后续1辆车
+      先入场，不会将您放置在队列末尾，请您放心）"
+            android:textSize="@dimen/dimen10dp"
+            android:layout_marginBottom="@dimen/dimen20dp"
+            android:textColor="@color/black_333"/>
+
+        <View style="@style/Base_line_Horizontal"
+            android:background="@color/color_two_theme"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_count_down_sure"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="可以按时到达"
+                android:background="@drawable/dialog_corner_count_left"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <View style="@style/Base_line_vertical"
+                android:background="@color/color_theme"/>
+
+            <TextView
+                android:id="@+id/tv_count_down_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen30dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="无法按时入场"
+                android:textColor="@color/color_theme"
+                android:textSize="12sp" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- gjx -->
+    <!-- 连框颜色值 -->
+    <item>
+        <shape>
+            <gradient
+                android:angle="360"
+                android:centerColor="#009DF1"
+                android:centerX="0.5"
+                android:centerY="0.5"
+
+                android:endColor="#0C85EE"
+                android:startColor="#1CBBF8"
+                android:type="linear" />
+            <corners android:radius="100dp" />
+
+        </shape>
+    </item>
+    <!-- 主体背景颜色值 -->
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape>
+            <gradient
+                android:angle="360"
+                android:centerColor="#009DF1"
+                android:centerX="0.5"
+                android:centerY="0.5"
+
+                android:endColor="#0C85EE"
+                android:startColor="#1CBBF8"
+                android:type="linear" />
+
+            <corners android:radius="100dp" />
+
+            <!-- 应该是圆角 -->
+        </shape>
+    </item>
+
+</layer-list>

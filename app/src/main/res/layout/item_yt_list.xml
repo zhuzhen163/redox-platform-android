@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/dimen5dp"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen15dp">
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen5dp">
+
+            <ImageView
+                android:id="@+id/iv_yt_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/dimen5dp"
+                android:src="@drawable/app_unselect_yt" />
+
+            <TextView
+                android:id="@+id/warehouseName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_yt_select"
+                android:gravity="center"
+                android:textColor="@color/colorBlack_000000"
+                android:textSize="@dimen/sp_13"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/bt_goto_order_platformlist"
+                android:layout_width="@dimen/dimen73dp"
+                android:layout_height="@dimen/dimen33dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/yt_button"
+                android:text="@string/yuyue"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <View style="@style/Base_line_Horizontal" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen13dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/dimen13dp"
+                    android:layout_weight="1"
+                    android:text="@string/paiduiyuyueshu"
+                    android:textColor="@color/colorBlack_B3B3B3"
+                    android:textSize="@dimen/sp_12">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/dimen13dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/yuetaiquanmingcheng"
+                    android:textColor="@color/colorBlack_B3B3B3"
+                    android:textSize="@dimen/sp_12">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/zuizaoyuyueshiduan"
+                    android:textColor="@color/colorBlack_B3B3B3"
+                    android:textSize="@dimen/sp_12">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen15dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_queueNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/dimen13dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color_black_222222"
+                    android:textSize="@dimen/sp_12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_platformName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginBottom="@dimen/dimen13dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color_black_222222"
+                    android:textSize="@dimen/sp_12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_startEndTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/color_black_222222"
+                    android:textSize="@dimen/sp_12"
+                    android:textStyle="bold">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

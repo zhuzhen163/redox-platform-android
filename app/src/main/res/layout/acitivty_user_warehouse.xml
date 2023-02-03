@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <widget.CommonToolbar
+        android:id="@+id/ctl_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="常用仓库" />
+    <View style="@style/Base_line_Horizontal"/>
+
+    <com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView
+        android:layout_weight="1"
+        android:id="@+id/rv_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.yanzhenjie.recyclerview.swipe.SwipeMenuRecyclerView>
+
+    <LinearLayout
+        android:background="@color/color_f6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen80dp">
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/tv_addWarehouse"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen15dp"
+            android:gravity="center"
+            android:text="添加常用仓库"
+            android:layout_marginLeft="@dimen/dimen60dp"
+            android:layout_marginRight="@dimen/dimen60dp"
+            android:background="@drawable/yt_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen45dp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <RadioButton
+        android:layout_marginLeft="@dimen/dimen10dp"
+        android:layout_width="wrap_content"
+        android:paddingRight="@dimen/dimen10dp"
+        android:paddingLeft="@dimen/dimen10dp"
+        android:layout_height="@dimen/dimen30dp"
+        android:id="@+id/rb_code"
+        android:button="@null"
+        android:checked="false"
+        android:gravity="center"
+        android:text=""
+        android:background="@drawable/yt_button_select"
+        android:textColor="@drawable/yt_build_textcolor_selecter"
+        android:textSize="@dimen/dimen12dp" />
+</LinearLayout>

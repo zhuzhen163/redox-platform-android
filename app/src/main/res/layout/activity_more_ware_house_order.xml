@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MoreWareHouseOrderActivity">
+
+    <widget.CommonToolbar
+        android:id="@+id/ctv_title_more_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:right_img_one="@drawable/app_scan_logo"
+        app:title_name="@string/duocangyuyue" />
+
+    <View style="@style/Base_line_Horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen10dp"
+        android:background="@color/white"
+        android:paddingTop="@dimen/dimen10dp"
+        android:paddingBottom="@dimen/dimen10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen30dp"
+            android:layout_marginLeft="@dimen/dimen85dp"
+            android:layout_marginRight="@dimen/dimen85dp"
+            android:background="@drawable/shape_bg_solid_yellow">
+
+            <TextView
+                android:id="@+id/tv_qiyehao"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_left_bg_stroke_yellow_selected"
+                android:gravity="center"
+                android:text="@string/qiyehaochaxun"
+                android:textColor="@color/white"
+                android:textSize="@dimen/sp_15" />
+
+            <TextView
+                android:id="@+id/tv_cangkudaima"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/shape_right_bg_stroke_yellow_unselected"
+                android:gravity="center"
+                android:text="@string/cangkudaimachaxun"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/sp_15" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_more_warehouse_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

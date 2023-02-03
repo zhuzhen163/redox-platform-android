@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/v_popupwindow"
+
+        android:layout_width="@dimen/dp_0"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/ll_popwindow"
+        android:layout_width="@dimen/dp_120"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_popupwindow"
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:divider="#dcdcdc"
+
+            android:dividerHeight="@dimen/dp_0.5"
+            android:layout_height="@dimen/dp_0"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_43"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_popupwindow_clear"
+
+                android:layout_weight="1"
+                android:background="#F8F8F8"
+                android:textColor="#5A5A5A"
+                android:textSize="@dimen/sp_17"
+                android:text="清空"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_popupwindow_ok"
+                android:background="@drawable/btn_frame_blue"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/sp_17"
+                android:text="确认"
+                android:layout_weight="1"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

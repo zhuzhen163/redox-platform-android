@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TopBar">
+        <attr name="leftBackground" format="reference" />
+        <attr name="rightBackground" format="reference" />
+        <attr name="titleText" format="string" />
+        <attr name="titleTextSize" format="dimension" />
+        <attr name="titleTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_widths" format="dimension" />
+        <attr name="border_colors" format="color" />
+    </declare-styleable>
+    <declare-styleable name="RoundedRectProgressBar">
+        <attr name="backColor" format="color" />
+        <attr name="barColor" format="color" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+    <!--设置筛选按钮样式-->
+    <declare-styleable name="CommonScreenView">
+        <attr name="title" format="string" />
+        <attr name="title_icon" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="FlowViewVertical">
+        <attr name="v_bg_radius" format="dimension" />
+        <attr name="v_pro_radius" format="dimension" />
+        <attr name="v_bg_width" format="dimension" />
+        <attr name="v_bg_color" format="color" />
+        <attr name="v_pro_width" format="dimension" />
+        <attr name="v_pro_color" format="color" />
+        <attr name="v_interval" format="dimension" />
+        <attr name="v_bgPositionX" format="dimension" />
+        <attr name="v_max_step" format="integer" />
+        <attr name="v_pro_step" format="integer" />
+        <attr name="v_textPaddingLeft" format="dimension" />
+        <attr name="v_timePaddingRight" format="dimension" />
+        <attr name="v_textMoveTop" format="dimension" />
+        <attr name="v_timeMoveTop" format="dimension" />
+        <attr name="v_timeSize" format="dimension" />
+        <attr name="v_titleSize" format="dimension" />
+        <attr name="v_time_color" format="color" />
+        <attr name="v_title_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PasswordInputView">
+        <attr name="pwv_maxLength" format="integer" />
+        <attr name="pwv_fillColor" format="color" />
+        <attr name="pwv_borderColor" format="color" />
+        <attr name="pwv_pwdColor" format="color" />
+        <attr name="pwv_haveInputBorderColor" format="color" />
+
+        <attr name="pwv_strokeWidth" format="dimension" />
+        <attr name="pwv_radius" format="dimension" />
+        <attr name="pwv_spacing" format="dimension" />
+        <attr name="pwv_asterisk" format="string" />
+
+        <attr name="pwv_borderStyle" format="enum">
+            <enum name="box" value="0" />
+            <enum name="line" value="1" />
+        </attr>
+        <attr name="pwv_pwdStyle" format="enum">
+            <enum name="circle" value="0" />
+            <enum name="asterisk" value="1" />
+            <enum name="plaintext" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="SettingLayout">
+        <attr name="setting_name" format="string"></attr>
+        <attr name="setting_layout" format="string"></attr>
+        <attr name="setting_img" format="reference"></attr>
+        <attr name="setting_next" format="reference"></attr>
+        <attr name="setting_right_name" format="string"></attr>
+
+    </declare-styleable>
+
+    <style name="date_picker_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <declare-styleable name="InfoView">
+        <attr name="info_txt" format="string" />
+        <attr name="info_txt_color" format="color" />
+        <attr name="info_watermark" format="reference" />
+        <attr name="info_img_bg" format="reference" />
+
+    </declare-styleable>
+    <!--拍摄圆形view-->
+    <declare-styleable name="CircleCameraLayout">
+        <attr name="circle_camera_width" format="dimension" />
+        <attr name="circle_camera_height" format="dimension" />
+        <attr name="borders_widths" format="dimension" />
+    </declare-styleable>
+</resources>

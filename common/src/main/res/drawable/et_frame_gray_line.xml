@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- gjx -->
+
+    <item>
+        <shape>
+            <solid android:color="#EFEFEF" />
+
+            <corners android:radius="100dp" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="1dp"
+        android:left="1dp"
+        android:right="1dp"
+        android:top="1dp">
+        <shape>
+            <gradient
+                android:angle="90"
+                android:centerColor="#EFEFEF"
+                android:centerX="0.5"
+                android:centerY="0.5"
+
+                android:endColor="#EFEFEF"
+                android:startColor="#EFEFEF"
+                android:type="linear" />
+            <corners android:radius="100dp" />
+        </shape>
+    </item>
+
+</layer-list>

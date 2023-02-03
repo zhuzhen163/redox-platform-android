@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners
+        android:bottomLeftRadius="@dimen/dimen_bt_raduis"
+        android:bottomRightRadius="@dimen/dimen_bt_raduis"
+        android:topLeftRadius="@dimen/dimen_bt_raduis"
+        android:topRightRadius="@dimen/dimen_bt_raduis" />
+    <gradient
+        android:startColor="#F48833"
+        android:endColor="#EEA849"
+        />
+</shape>

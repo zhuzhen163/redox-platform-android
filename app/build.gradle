@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.redoxyt.platform"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 17
+        versionName "1.1.6"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+    }
+    signingConfigs {
+        config {
+            storeFile file('yt.jks')
+            keyAlias 'key0'
+            keyPassword 'app@bdt.yt'
+            storePassword 'app@bdt.yt'
+            lintOptions {
+                checkReleaseBuilds false
+            }
+            v2SigningEnabled false
+        }
+        debug {
+            storeFile file('yt.jks'  )
+            keyAlias 'key0'
+            keyPassword 'app@bdt.yt'
+            storePassword 'app@bdt.yt'
+            v2SigningEnabled false
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.debug
+        }
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    //打包包名
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def fileName = "yt-${defaultConfig.versionName}-${releaseTime()}-${buildType.name}.apk"
+            outputFileName = fileName
+        }
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyyMMdd", TimeZone.getTimeZone("UTC"))
+}
+
+dependencies {
+    configurations.all {
+        resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+            def requested = details.requested
+            if (requested.group == 'com.android.support') {
+                if (!requested.name.startsWith("multidex")) {
+                    details.useVersion '26.1.0'
+                }
+            }
+        }
+    }
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation project(':common')
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation files('libs/zxing.jar')
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    /*    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+        releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+        testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'*/
+    implementation files('libs/tbs_sdk_thirdapp.jar')
+    implementation(name: 'shanyan_sdk_v2.3.4.3', ext: 'aar')
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation 'com.alibaba:fastjson:1.2.61'
+    implementation 'org.bouncycastle:bcprov-jdk15on:1.47'
+    implementation 'com.github.jdsjlzx:LRecyclerView:1.5.4.3'
+    implementation 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    implementation files('libs/hellocharts-library-1.5.8.jar')
+    implementation 'com.android.support:design:26.0.0'
+}

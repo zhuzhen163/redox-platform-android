@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_f6"
+    android:layout_height="match_parent">
+
+    <widget.CommonToolbar
+        app:left_visibility="true"
+        android:id="@+id/ctb_title"
+        android:paddingTop="@dimen/dimen25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_name="入场检查" />
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_carry"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:src="@drawable/yt_sys"
+            android:layout_marginTop="@dimen/dimen30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="@dimen/dimen224dp"
+            android:layout_height="@dimen/dimen224dp" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen14dp"
+            android:textColor="@color/color_theme"
+            android:text="扫一扫"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/dimen12dp"
+            android:textColor="@color/black_666"
+            android:text="扫一扫司机的二维码确认司机进入正确的仓库"/>
+
+        <EditText
+            android:id="@+id/et_input_reservationCode"
+            android:layout_marginTop="@dimen/dimen30dp"
+            android:background="@drawable/yt_info_auth_bg"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_width="@dimen/dimen200dp"
+            android:layout_height="@dimen/dimen30dp"
+            android:hint="请输入预约码"
+            android:textColor="@color/black_666"
+            android:textColorHint="@color/black_666"
+            android:textSize="@dimen/dimen13dp"/>
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_marginTop="@dimen/dimen60dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="确定"
+            android:textSize="@dimen/dimen15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/yt_button"
+            android:layout_width="@dimen/dimen250dp"
+            android:layout_height="@dimen/dimen45dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_list"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View style="@style/Base_line_Horizontal_10"/>
+        <com.github.jdsjlzx.recyclerview.LRecyclerView
+            android:layout_weight="1"
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            />
+        <LinearLayout
+            android:id="@+id/ll_confirm"
+            android:gravity="center"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen80dp">
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_marginRight="@dimen/dimen60dp"
+                android:layout_marginLeft="@dimen/dimen60dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dimen14dp"
+                android:background="@drawable/yt_button"
+                android:gravity="center"
+                android:text="提交"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen45dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
